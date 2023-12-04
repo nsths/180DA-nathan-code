@@ -29,7 +29,7 @@ def zero_channel():
     print("...channel %1d zeroed" % nau7802.channel)
 
 
-def read_raw_value(samples=10):
+def read_raw_value(samples=2):
     """Read and average consecutive raw sample values. Return average raw value."""
     sample_sum = 0
     sample_count = samples
