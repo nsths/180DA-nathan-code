@@ -46,7 +46,7 @@ def calibrate_weight_sensor():
     input()
 
     # Read the value of the sensor when empty
-    empty_weight_reading = read_raw_value(10)
+    empty_weight_reading = read_raw_value(20)
 
     # Prompt the user to enter the weight in grams of the item they place on the scale
     item_weight = float(input("Enter the weight of the item in grams: "))
