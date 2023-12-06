@@ -73,12 +73,11 @@ time.sleep(3)
 
 nau7802.channel = 1
 zero_channel()  # Calibrate and zero channel
-
+gain = calibrate_weight_sensor()
 print("READY")
 
 ### Main loop: Read load cells and display raw values
 while True:
-    gain = calibrate_weight_sensor()
     print("=====")
     nau7802.channel = 1
     value = read_raw_value() * gain
